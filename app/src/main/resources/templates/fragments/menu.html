@@ -1,0 +1,14 @@
+<div th:fragment="menu">
+    <div class="menu">
+        <div class="uk-container uk-container-center">
+            <nav class="uk-navbar no-bottom-border">
+                <ul class="uk-navbar-nav uk-width-1-1">
+                    <li class="uk-width-1-4" th:classappend="${page} == 'home' ? uk-active : ''"><a href="/">Home</a></li>
+                    <li class="uk-width-1-4" th:classappend="${page} == 'surveys' ? uk-active : ''"><a href="/surveys">Find surveys</a></li>
+                    <li class=" uk-width-1-4" th:classappend="${page} == 'add_survey' ? uk-active : ''"><a href="/survey/new">Create your survey</a></li>
+                    <li class="uk-width-1-4" th:classappend="${page} == 'contact' ? uk-active : ''"><a href="/contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
